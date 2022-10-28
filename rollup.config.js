@@ -2,7 +2,6 @@ import { babel } from "@rollup/plugin-babel"
 import resolve from "@rollup/plugin-node-resolve"
 import typescript from "@rollup/plugin-typescript"
 import external from "rollup-plugin-peer-deps-external"
-import scss from "rollup-plugin-scss"
 import { terser } from "rollup-plugin-terser"
 
 export default [
@@ -20,11 +19,6 @@ export default [
       },
     ],
     plugins: [
-      scss({
-        output: true,
-        failOnError: true,
-        outputStyle: "compressed",
-      }),
       babel({
         exclude: "node_modules/**",
         presets: ["@babel/preset-react"],

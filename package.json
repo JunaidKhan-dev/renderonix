@@ -4,6 +4,7 @@
     "name": "junaidkhan1"
   },
   "contributors": [
+    "Martin Lowe",
     "Courtney Watts"
   ],
   "main": "dist/index.js",
