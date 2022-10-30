@@ -3,11 +3,11 @@ import { ButtonVariants, ButtonSizes} from "../../../types/index"
 
 interface WrapperProps: {
   variant: ButtonVariants
-  sizes: ButtonSizes
+  size: ButtonSizes
 }
 
 
-export const ButtonWrapper = styled.button<WrapperProps>`
+export const StyledButton = styled.button<WrapperProps>`
 
 font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 700;
