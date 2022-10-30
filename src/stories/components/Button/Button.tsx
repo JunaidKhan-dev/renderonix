@@ -28,16 +28,17 @@ interface ButtonProps {
 export const Button = ({
  
   size = "medium",
-  variant,
+  variant= "primary",
   title,
-  ...props
+  
 }: ButtonProps) => {
  
   return (
  
     <StyledButton
       type="button"
-      {...props}
+      variant={variant}
+      size={size}
     >
       {title}
     </StyledButton>
