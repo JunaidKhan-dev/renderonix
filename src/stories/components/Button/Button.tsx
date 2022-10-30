@@ -1,8 +1,9 @@
-import "./button.css"
 
+import ButtonWrapper from "./button.style.ts"
 import React from "react"
 
 interface ButtonProps {
+
   /**
    * Is this the principal call to action on the page?
    */
@@ -39,7 +40,8 @@ export const Button = ({
     ? "storybook-button--primary"
     : "storybook-button--secondary"
   return (
-    <button
+    <ButtonWrapper>
+    <StyledButton
       type="button"
       className={["storybook-button", `storybook-button--${size}`, mode].join(
         " "
@@ -48,6 +50,7 @@ export const Button = ({
       {...props}
     >
       {title}
-    </button>
+    </StyledButton>
+    </ButtonWrapper>
   )
 }
