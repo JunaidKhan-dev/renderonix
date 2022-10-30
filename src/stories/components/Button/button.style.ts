@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { ButtonVariants, ButtonSizes} from "../../../types/index"
 
-interface WrapperProps: {
+interface WrapperProps {
   variant: ButtonVariants
   size: ButtonSizes
 }
