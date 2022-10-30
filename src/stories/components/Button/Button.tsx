@@ -1,5 +1,4 @@
 
-import ButtonWrapper from "./button.style.ts"
 import React from "react"
 import { StyledButton } from "./button.style"
 
@@ -38,10 +37,6 @@ export const Button = ({
  
     <StyledButton
       type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={{ variant }}
       {...props}
     >
       {title}
