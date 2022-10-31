@@ -1,31 +1,32 @@
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
-import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import typescript from "@rollup/plugin-typescript";
-import postcss from "rollup-plugin-postcss";
+import { babel } from "@rollup/plugin-babel"
+import resolve from "@rollup/plugin-node-resolve"
+import typescript from "@rollup/plugin-typescript"
+import external from "rollup-plugin-peer-deps-external"
+import { terser } from "rollup-plugin-terser"
 
-import packageJson from "./package.json";
-
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  input: "./src/index.ts",
-  output: [
-    {
-      file: packageJson.main,
-      format: "cjs",
-      sourcemap: true
-    },
-    {
-      file: packageJson.module,
-      format: "esm",
-      sourcemap: true
-    }
-  ],
-  plugins: [
-    peerDepsExternal(),
-    resolve(),
-    commonjs(),
-    typescript(),
-    postcss()
-  ]
-};
+export default [
+  {
+    input: "./src/index.ts",
+    output: [
+      {
+        file: "dist/index.js",
+        format: "cjs",
+      },
+      {
+        file: "dist/index.es.js",
+        format: "es",
+        exports: "named",
+      },
+    ],
+    plugins: [
+      babel({
+        exclude: "node_modules/**",
+        presets: ["@babel/preset-react"],
+      }),
+      external(),
+      resolve(),
+      typescript(),
+      terser(),
+    ],
+  },
+]

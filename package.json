@@ -4,14 +4,14 @@
     "name": "junaidkhan1"
   },
   "contributors": [
+    "Martin Lowe",
     "Courtney Watts"
   ],
-  "main": "./build/index.js",
-  "module": "./build/index.es.js",
-  "version": "0.0.4",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "version": "0.0.7",
   "private": false,
   "license": "MIT",
-  "dependencies": {},
   "scripts": {
     "test": "cross-env SKIP_PREFLIGHT_CHECK=true react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
@@ -49,9 +49,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.2",
     "@rollup/plugin-commonjs": "^19.0.1",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "@rollup/plugin-typescript": "^8.2.3",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.5.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-links": "^6.5.10",
@@ -65,20 +67,28 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.26",
     "chromatic": "^6.9.0",
     "cross-env": "^7.0.3",
     "postcss": "^8.3.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-scripts": "4.0.3",
-    "rollup": "^2.54.0",
+    "rollup": "^2.79.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "styled-components": "^5.3.6"
   }
 }
