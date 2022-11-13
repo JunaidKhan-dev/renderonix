@@ -7,7 +7,7 @@ interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  variant?: "primary" | "secondary"
+  variant?: "primary" | "secondary" | "glass"
   /**
    * How large should the button be?
    */

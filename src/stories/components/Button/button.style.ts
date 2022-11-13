@@ -32,6 +32,13 @@ color: #333;
 background-color:transparent;
 `}
 
+${({variant}) => 
+variant === "glass" &&
+css`
+color: #333;
+background-color:transparent;
+`}
+
 ${({size}) => 
 size === "small" &&
 css`
