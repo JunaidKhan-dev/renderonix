@@ -41,8 +41,8 @@ css`
   background-color: #fff;
   border: 10px solid #fff;
   backdrop-filter: blur(30px);
-  color: #FFFFFF;
-  cursor: pointer;
+  color: #FFF;
+  
 `}
 
 ${({size}) => 
