@@ -38,12 +38,10 @@ css`
   padding: 24px 32px;
   border: 0;
   text-decoration: none;
-  border-radius: 15px;
-  background-color: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.1);
+  background-color: #fff;
+  border: 10px solid #fff;
   backdrop-filter: blur(30px);
-  color: rgba(255,255,255,0.8);
-  font-size: 14px;
+  color: #FFFFFF;
   cursor: pointer;
 `}
 
