@@ -24,6 +24,11 @@ Secondary.args = {
   title: "Button",
 }
 
+export const Glass = Template.bind({})
+Glass.args = {
+  title: "Button",
+}
+
 export const Large = Template.bind({})
 Large.args = {
   size: "large",

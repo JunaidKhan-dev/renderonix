@@ -35,8 +35,16 @@ background-color:transparent;
 ${({variant}) => 
 variant === "glass" &&
 css`
-color: #333;
-background-color:transparent;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  cursor: pointer;
 `}
 
 ${({size}) => 
