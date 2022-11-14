@@ -23,3 +23,5 @@ export const Pannel = ({
   
     )
   }
+
+  export default Pannel
