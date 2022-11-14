@@ -1,12 +1,15 @@
+import React from "react"
 
 
 interface PannelProps{
+    size:string,
     
+
 }
 
 export const Pannel = ({
  
-    size = "medium",
+ 
     
     children,
     
