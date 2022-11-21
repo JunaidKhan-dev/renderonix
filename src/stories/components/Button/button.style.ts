@@ -35,14 +35,19 @@ background-color:transparent;
 ${({variant}) => 
 variant === "glass" &&
 css`
-  padding: 24px 32px;
-  border: 0;
-  text-decoration: none;
-  background-color: #fff;
-  border: 10px solid #fff;
-  backdrop-filter: blur(30px);
-  color: #FFF;
-  
+margin: auto;
+display: inline-block;
+padding: 1rem 4rem;
+background: rgba(255, 255, 255, 0.35);
+border-radius: 10px;
+font: 400 1.2rem sans-serif;
+color:#fff;
+border: 1px solid rgba(255, 255, 255, 0.35);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+outline: none;
+cursor: pointer;
 `}
 
 ${({size}) => 
