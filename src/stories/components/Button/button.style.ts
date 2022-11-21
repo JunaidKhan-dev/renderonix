@@ -17,6 +17,8 @@ cursor: pointer;
 display: inline-block;
 line-height: 1;
 
+
+
 ${({variant}) => 
 variant === "primary" &&
 css`
@@ -39,7 +41,6 @@ margin: auto;
 display: inline-block;
 padding: 1rem 4rem;
 background: rgba(255, 255, 255, 0.35);
-border-radius: 10px;
 font: 400 1.2rem sans-serif;
 color:#fff;
 border: 1px solid rgba(255, 255, 255, 0.35);
@@ -72,4 +73,5 @@ padding: 12px 24px;
 `}
 
 `
+
 

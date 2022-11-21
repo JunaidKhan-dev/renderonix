@@ -2,6 +2,11 @@
 import React from "react"
 import { StyledButton } from "./button.style"
 
+interface WrapperProps {
+    // * Optional background-color
+    backgroundColor? :string
+}
+
 interface ButtonProps {
 
   /**
@@ -29,6 +34,10 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
+
+
+
+
 export const Button = ({
  
   size = "medium",
@@ -39,15 +48,16 @@ export const Button = ({
 }: ButtonProps) => {
  
   return (
- 
+   
     <StyledButton
       type="button"
       variant={variant}
       size={size}
-      style={{backgroundColor}}
+      // style={{backgroundColor}}
     >
       {title}
     </StyledButton>
+  
 
   )
 }
