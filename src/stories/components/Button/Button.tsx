@@ -20,6 +20,10 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void
+
+  // * Optional background-color
+  backgroundColor? :string
+
 }
 
 /**
@@ -30,6 +34,7 @@ export const Button = ({
   size = "medium",
   variant= "primary",
   title,
+  backgroundColor,
   
 }: ButtonProps) => {
  
@@ -39,6 +44,7 @@ export const Button = ({
       type="button"
       variant={variant}
       size={size}
+      style={{backgroundColor}}
     >
       {title}
     </StyledButton>
