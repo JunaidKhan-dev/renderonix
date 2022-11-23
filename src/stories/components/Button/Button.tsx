@@ -48,7 +48,7 @@ export const Button = ({
 }: ButtonProps) => {
  
   return (
-   
+  
     <StyledButton
       type="button"
       variant={variant}
@@ -57,6 +57,7 @@ export const Button = ({
     >
       {title}
     </StyledButton>
+   
   
 
   )
